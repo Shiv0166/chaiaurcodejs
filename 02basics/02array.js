@@ -20,7 +20,8 @@ const dc_hero = ["batma", "superman", "falsh"]
 
 // lets take an example if array ke andar array
 const arr1 = [1, 2, 3,[4,5,6],7,8,9,[10,[11,12]]];
-console.log(arr1.flat(Infinity)) // iske use se saare nested array ke element ko single array me convert kr dega and it will give us new arraywith allthe element of the array and it will not manipulate the original array
+console.log(arr1.flat(Infinity)) // iske use se saare nested array ke element ko single array me convert kr dega and it will give us new arraywith allthe 
+// element of the array and it will not manipulate the original array
 
 
 //to change in array 
