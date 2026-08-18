@@ -38,13 +38,13 @@ The DOM is explained as a model that represents the structure of an HTML documen
 
 # innerText apko content deta hh but jis prr css na ho 
 # textContent apko pura content deta hh
-# querySelector apko ek hi value deta hh
+# querySelector apko ek hi value deta hh first wali jiska ap value manng rhe ho
 document.queryselector('h1') apko first h1 diya jaiyega 
  ap quereyselector se id aur class bhi select kr skte ho 
 
 # document.querySelector('#shivam') shivam id ka naam hh
 # documnet.querySelector('.heading') heading class ka naam 
-
+# id ko # and class ko . 
 # hm querySelectorAll saare elemnt ko select karega 
 // ID
 document.getElementById("container");
@@ -77,4 +77,3 @@ Find all boxes → take the second box.
 
 # go through dom cheat sheet 
 [text](../../../../Downloads/DOM_NodeList_HTMLCollection_CheatSheet.pdf)
-

@@ -1,0 +1,57 @@
+<!-- yha pr hmko parent elemnt me naya elemnt bna kr usko append krana hh  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body >
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerText = `${langName}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("java")
+    addLanguage("cpp")
+
+    function addOptimize(shivam){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(shivam))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimize('shivam kk')
+
+    // EDIT-> child ko kaise select krna hh dekh lena 2-3 tarika 
+    const secondlang = document.querySelector("li:nth-child(2)")
+    // secondlang.innerHTML = "Mojo" 1st tarika
+    // 2nd tarika
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondlang.replaceWith(newli)
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove 
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+    
+
+
+
+
+</script>
+</html>
+<!-- jo basic wli method me kuch problem hh ki agr koi elemnet add krna hh to pura tree traverse krne ke bd add hota time complexicity jayada hh -->
+ <!-- now we do optimize so it can take less time complexicity -->
+  <!-- document.createElement("p")      // creates Element Node
+document.createTextNode("Hello") // creates Text Node -->
